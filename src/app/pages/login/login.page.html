@@ -9,20 +9,20 @@
     <ion-col size=12>
       <ion-item>
         <ion-label position="floating">Email</ion-label>
-        <ion-input></ion-input>
+        <ion-input type="Email" [(ngModel)]="email"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Password</ion-label>
-        <ion-input ></ion-input>
+        <ion-input type="Password" [(ngModel)]="password"></ion-input>
       </ion-item>
     </ion-col>
     <ion-col>
       <ion-button expand="full" class="btnLogin">Login</ion-button>
     </ion-col>
     <ion-col>
-      <ion-button expand="full">Login with facebook <ion-icon name="logo-facebook"></ion-icon></ion-button>
+      <ion-button expand="full" class="btnFb">Login with facebook <ion-icon name="logo-facebook"></ion-icon></ion-button>
     </ion-col>
-    <p>No account ? Register</p>
+    <p><a routerLink="/register">No account ? Register</a></p>
   </ion-row>
 
 </ion-content>
